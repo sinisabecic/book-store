@@ -1,5 +1,5 @@
 # book-store
-Bookstore for online shopping of the books. This project has a AdminLTE Control Management System for manipulating with data.
+Bookstore for online shopping books. This project has a AdminLTE Control Management System for manipulating with data.
 First of all, what is important: Make new folder with name 'Book-store', and store it on htdocs.
 
 
