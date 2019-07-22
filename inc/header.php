@@ -7,30 +7,107 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  h1, h2{color: #4CAF50;}
 
-<link rel="stylesheet" href="adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="adminlte/bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="adminlte/bower_components/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="adminlte/dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="adminlte/dist/css/skins/_all-skins.min.css">
-  <!-- Morris chart -->
-  <link rel="stylesheet" href="adminlte/bower_components/morris.js/morris.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="adminlte/bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+   .button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 14px;
+    width: 50px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+  .button1 {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 115px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button1:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.button1:hover{
+  background-color: #3e8e41;
+}
+.button:hover{
+  background-color: #3e8e41;
+}
+
+.button1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+  #mySearch {
+  width: 104px;
+  font-size: 14px;
+  padding: 9px;
+  border: 1px solid #ddd;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 
 
 
@@ -57,13 +134,10 @@
 		<div class="header_top">		
 			
 			    
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">    
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Pocetna <span class="sr-only"></span></a></li>
+ <div class="topnav">
+   
+        <a class="active" href="index.php">Pocetna</a>
 
 <?php
  include 'lib/Session.php';
@@ -100,10 +174,10 @@
 		<?php 
         $chkCart = $ct->checkCartTable(); 
         if ($chkCart) { ?>
-        	<li><a href="cart.php">
-			Korpa  <span class="glyphicon glyphicon-shopping-cart"></span>
-			</a></li>
-        	<li><a href="payment.php">Placanje</a></li>
+        	<a href="cart.php">
+			Korpa </span>
+			</a>
+        	<a href="payment.php">Placanje</a>
       <?php  }  ?>
 		
 		
@@ -112,7 +186,7 @@
        $cmrId =  Session::get("cmrId");
         $chkOrder = $ct->checkOrder($cmrId); 
         if ($chkOrder) { ?>
-        	<li><a href="order.php">Porucivanje</a></li>
+        	<a href="order.php">Porucivanje</a>
         	 
       <?php  }  ?>
 		
@@ -121,7 +195,7 @@
 		<?php 
 			$login =  Session::get("cuslogin");
 			if ($login == true) { ?>
-				<li><a href="profile.php">Profil</a></li>
+				<a href="profile.php">Profil</a>
 		<?php } 	?>
 	
 
@@ -144,21 +218,21 @@
 		 if (isset($_SESSION['cuslogin'])) {
 		 		?>
 		
-		<li><a href="wishlist.php">Lista zelja</a> </li>
+		<a href="wishlist.php">Lista zelja</a> 
          <?php   } ?>
 
 		
-        <li><a href="contact.php">Kontakt</a> </li>
-      </ul>
+        <a href="contact.php">Kontakt</a>
+      
 
 	  
 
-      <form class="navbar-form navbar-left" action="search.php" method="get">
-        <div class="form-group">		 
-          <input style="width: 140px" name="search" type="text" class="form-control" placeholder="Pretraga">
-      </div>	
+      <form action="search.php" method="get">      	
+
+          <input style="width: 140px" name="search" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Pretraga">
+    
 		
-       <button class="btn btn-light" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+       <button class="button" type="submit"><i class="fa fa-fw fa-search"></i></button>
 
 
 
@@ -173,33 +247,30 @@
 
 			$login =  Session::get("cuslogin");
 			  if ($login == false) { ?>
-			  <a href="login.php"><button class="btn btn-primary" type="button">
-				Prijava  <span class="glyphicon glyphicon-user"></span>
-				</button></a>
+			  <a style="color: #4CAF50" href="login.php"><i class="fa fa-fw fa-user"></i>Prijava</a>
 			
 				<?php   }else { ?>
-	            <a href="?cid=<?php Session::get('cmrId') ?>"><button class="btn btn-danger" type="button">
-				Odjava  <span class="glyphicon glyphicon-user"></span>
-				</button></a>            
+	            <a style="color: red" href="?cid=<?php Session::get('cmrId') ?>"><i class="fa fa-fw fa-user"></i>Odjava</a>            
 
 		  <?php } ?>
 
 
 
 
-		  <a href="cart.php"><button class="btn btn-warning" type="button"><span class="glyphicon glyphicon-shopping-cart"><?php 
+		  <a href="cart.php"><i class="fa fa-fw fa-eur"></i><?php 
 
                              $getData = $ct->checkCartTable();
                              if ($getData) {
                              	 $sum = Session::get("sum");
                              	 $qty = Session::get("qty");
-                           			  echo " " .$sum."eur";	//" Kol. ".$qty;
+                           			  echo " " .$sum;	//" Kol. ".$qty;
                              }else{
-                             	echo "(Prazno)";
+                             	echo " 0";
                              }
                             
-								?></span></button></a>
+								?></a>
 </form>
-</nav>
+
 
  </div>
+  </div>

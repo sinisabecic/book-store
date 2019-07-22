@@ -14,11 +14,12 @@
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
-				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2><br>						
+				    <div class="text list_2_of_1">					
+
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
 						
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>
 
@@ -37,10 +38,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2><br>		
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>		
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">				
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -65,10 +66,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2><br>
+					<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>	
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">			
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -88,10 +89,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2>	<br>				
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">	
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -116,10 +117,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2>	<br>			
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -141,10 +142,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2><br>					
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>						
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 						
 						
 						
@@ -170,10 +171,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2>		<br>			
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">	
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -195,10 +196,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2>					<br>
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>					
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">	
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -222,10 +223,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2>					<br>
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>	
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">	
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>
@@ -248,10 +249,10 @@
 						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2 style="font-size:14px"><?php echo $result['productName']; ?> </h2>					<br>
+						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>	
 
 						<a href="preview.php?proid=<?php echo $result['productId']; ?>">	
-						<input style="font-size:13px;" class="btn btn-light" type="button" value="Dodaj u korpu"></a>
+						<input style="font-size:13px;" class="btn btn-secondary" type="button" value="Dodaj u korpu"></a>
 				   </div>
 			   </div>	
               <?php 	} } ?>

@@ -22,13 +22,12 @@
 	height: 370px;>
 					 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
 					 	<img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
-					 <h2><?php echo $result['productName']; ?> </h2>
+					 <h2 style="color: #4CAF50" class="text-center text-uppercase font-weight-bolder"><?php echo $result['productName']; ?> </h2>
 					 <p><?php echo $fm->textShorten($result['body'], 60); ?></p>
-					 <p><span class="price">€<?php echo $result['price']; ?></span></p>
-				     				     
-				 
+					 <p><span style="color: #000;" class="price"><?php echo $result['price']; ?> €</span></p>	     				     		
+
 				     <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-				     <input style="font-size:15px;" class="btn btn-light" type="button" value="Detalji">
+				     <input style="font-size:15px;" class="btn btn-dark" type="button" value="Detalji">
 				     </a>
 				</div>
 				 
@@ -53,11 +52,11 @@
 				<div class="grid_1_of_4 images_1_of_4">
 					  <a href="preview.php?proid=<?php echo $result['productId']; ?>">
 					 	<img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
-					 <h2><?php echo $result['productName']; ?> </h2>					  
-					 <p><span class="price">€<?php echo $result['price']; ?></span></p>
+					 <h2 style="color: #4CAF50" class="text-center text-uppercase font-weight-bolder"><?php echo $result['productName']; ?> </h2>					  
+					 <p ><span style="color: #000;" class="price"><?php echo $result['price']; ?> €</span></p>
 					 <br>
 				     <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-				     <input style="font-size:15px;" class="btn btn-light" type="button" value="Detalji">
+				     <input style="font-size:15px;" class="btn btn-dark" type="button" value="Detalji">
 				     </a>
 				     
 				</div>

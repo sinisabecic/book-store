@@ -61,9 +61,9 @@
 
                   <?php
                   if ($result['status'] == '0') { ?>
-                   <span class="label label-warning">Na cekanju</span>
+                   <span class="badge badge-warning">Na cekanju</span>
           <?php   }else { ?>
-                    <span class="label label-success">Primljeno</span>
+                    <span class="badge badge-success">Primljeno</span>
            <?php   }
 
                      ?>

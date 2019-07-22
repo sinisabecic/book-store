@@ -70,7 +70,9 @@ class Cart{
 	            SET
 	            quantity = '$quantity'
 	            WHERE cartId = '$cartId' ";
+
 	            $update_row  = $this->db->update($query);
+              
 	            if ($update_row) {
 	            	 header("Location:cart.php");
 	            }else {

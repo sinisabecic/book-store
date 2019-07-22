@@ -29,7 +29,7 @@
   ?>
 
 
-<table class="table table-sm table-dark" id="tblone">
+<table class="table table-sm table-light font-weight-light" id="tblone">
 
   <tr>
           
@@ -39,6 +39,7 @@
 
   <tbody>
     <tr>
+      <br>
       <th scope="row">Ime i Prezime :</th>
       <td><?php echo $result['name']; ?></td> 
     </tr>
@@ -73,7 +74,7 @@
 
   </tbody>
       <tr>          
-          <td><a href="editprofile.php"><button style="width:300px;" type="button" class="btn btn-light">Izmijeni</button> </a> </td>
+          <td><a href="editprofile.php"><button style="width:300px;" type="button" class="btn btn-outline-success">Izmijeni</button> </a> </td>
       </tr>
       
 

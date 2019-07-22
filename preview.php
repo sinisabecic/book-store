@@ -64,17 +64,17 @@
 						<img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" />
 					</div>
 				<div class="desc span_3_of_2">
-					<h2><?php echo $result['productName'];?> </h2>
+					<h2 style="color: #4CAF50"><?php echo $result['productName'];?> </h2>
 					<p><?php echo $fm->textShorten($result['body'], 200);?></p>					
 					<div class="price">
-						<p>Cijena: <span>€<?php echo $result['price'];?></span></p>
-						<p>Autor: <span><?php echo $result['catName'];?></span></p>
-						<p>Izdavac:<span><?php echo $result['brandName'];?></span></p>
+						<p>Cijena: <span style="color: #4CAF50;">€<?php echo $result['price'];?></span></p>
+						<p>Autor: <span style="color: #4CAF50;"><?php echo $result['catName'];?></span></p>
+						<p>Izdavac:<span style="color: #4CAF50;"><?php echo $result['brandName'];?></span></p>
 					</div>
 				<div class="add-cart">
 					<form action=" " method="post">
 						<input type="number" class="buyfield" name="quantity" value="1"/>					
-						<button type="submit" name="submit" class="btn btn-danger">Dodaj u korpu</button>
+						<button style="padding: 4px" type="submit" name="submit" class="btn btn-secondary">Dodaj u korpu</button>
 					</form>				
 				</div>
          <span style="color: red; font-size: 18px;">
@@ -114,7 +114,7 @@
 
 					<div class="mybutton">  
 					<form action=" " method="post">						
-						<button type="submit" name="wlist" class="btn btn-default">Dodaj u listu zelja</button>
+						<button style="width: 200px" type="submit" name="wlist" class="btn btn-light">Dodaj u listu zelja</button>
 					</form>	
 					</div>
 
@@ -125,8 +125,8 @@
 			<?php  } ?>
 			</div>
 			<div class="product-desc">
-			<h2>Recenzija</h2>
-			<?php echo $result['body'];?>
+			<h2 style="background: #4CAF50">Recenzija</h2>
+			<p class="text-justify font-weight-normal"><?php echo $result['body'];?></p>
 	    </div>
 		<?php } } ?>		
 	</div>
