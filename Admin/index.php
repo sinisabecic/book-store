@@ -1,4 +1,4 @@
-<?php require 'db.php'; ?>
+<?php //require 'db.php'; ?>
 <!-- OVDJE SAM DEKLARISAO USLOV, DA SAMO ADMIN MOZE DA PRISTUPI CMS-U -->
 <?php include '../lib/Session.php';  ?>
 
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <a href="pages/tables/order.php">
+            <a href="pages/tables/mainorder.php">
                 <div class="panel-footer">
                     <span class="pull-left">Lista porudzbina</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

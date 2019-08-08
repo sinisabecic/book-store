@@ -12,7 +12,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">					
 
@@ -35,7 +35,7 @@
 				<div class="listview_1_of_2 images_1_of_2" >
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>		
@@ -63,7 +63,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 					<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>	
@@ -86,7 +86,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
@@ -114,7 +114,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
@@ -139,7 +139,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>						
@@ -168,7 +168,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>				
@@ -193,7 +193,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>					
@@ -220,7 +220,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>	
@@ -246,7 +246,7 @@
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
 						 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-						  <img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+						  <img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h1 style="font-size:15px;" class="text-left text-uppercase font-weight-bold"><?php echo $result['productName']; ?></h1><br><br>	
@@ -276,7 +276,7 @@
           while ($result = $getIm->fetch_assoc() ) {
            
            ?>
-				<li><img src="adminlte/pages/tables/<?php echo($result['image']); ?>"  alt=""/></li>			
+				<li><img src="admin/pages/tables/<?php echo($result['image']); ?>"  alt=""/></li>			
 				<?php  }  } ?>	
 					 
 				    </ul>

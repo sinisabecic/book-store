@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2019 at 06:58 PM
+-- Generation Time: Jul 24, 2019 at 02:35 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -91,8 +91,6 @@ CREATE TABLE `tbl_cart` (
 
 INSERT INTO `tbl_cart` (`cartId`, `sId`, `productId`, `productName`, `price`, `quantity`, `image`) VALUES
 (28, 'hb1dkvk8ptdfhleq375m01e891', 1, ' Ariyan Lorem Ipsum fsdfasdaf', 525.00, 1, 'upload/a2d9ff0c56.png'),
-(42, 'ki70g8rmb4mfqs7cmei2l3qpi3', 10, 'Woman Tshirt 03', 300.00, 1, 'upload/a2fccb0144.png'),
-(43, 'e6r6avk209clao063d5p18i597', 7, 'Mans Tshirt 02', 400.00, 1, 'upload/4b2b2f0556.png'),
 (47, 'ncan4pfmi5206kbsa33ben8dfq', 1, 'Vreme Cuda', 300.00, 1, 'upload/24bdf0aefc.jpg');
 
 -- --------------------------------------------------------
@@ -174,9 +172,7 @@ CREATE TABLE `tbl_customer` (
 --
 
 INSERT INTO `tbl_customer` (`id`, `name`, `address`, `city`, `country`, `zip`, `phone`, `email`, `pass`) VALUES
-(2, 'siki', 'Groan Puran Polton south Dhaka ', 'ctg', 'USA', '1100', '069891329', 'siki@gmail.com', '12345'),
-(3, 'Elmaz Feratovic', 'Bijelo Polje bb', 'Bijelo Polje', 'Montenegro', '10222', '123456', 'elmaz@elmaz.com', '12345'),
-(4, 'Sinisa Becic', 'Podgorica', 'Podgorica', 'Montenegro', '81000', '55555555', 'siki.pfk@gmail.com', '123');
+(3, 'Elmaz Feratovic', 'Bijelo Polje bb', 'Bijelo Polje', 'Montenegro', '10222', '123456', 'elmaz@elmaz.com', '12345');
 
 -- --------------------------------------------------------
 
@@ -236,13 +232,6 @@ CREATE TABLE `tbl_order` (
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbl_order`
---
-
-INSERT INTO `tbl_order` (`id`, `cmrId`, `productId`, `productName`, `quantity`, `price`, `image`, `status`, `date`) VALUES
-(1, 3, 2, 'Vreme Cuda', 1, 12.00, 'upload/f42e913b1f.jpg', 0, '2019-07-15 15:12:08');
-
 -- --------------------------------------------------------
 
 --
@@ -268,8 +257,7 @@ INSERT INTO `tbl_product` (`productId`, `productName`, `catId`, `brandId`, `body
 (1, 'O junacima i grobovima', 6, 1, 'Ovaj roman je nastao 1961. godine i autoru je doneo svetsku slavu. Sastoji se od Äetiri dela. U prva dva, Zmaj i princeza i Nevidljiva lica, opisuje se Äudna ljubavna veza izmeÄ‘u Martina, osetljivog mladiÄ‡a koji ima naruÅ¡ene odnose sa roditeljima, i Alejandre, zagonetne devojke Äudnog ponaÅ¡anja, poreklom iz stare, nekada ugledne argentinske porodice. TreÄ‡i deo, IzveÅ¡taj o slepima, opisuje morbidno istraÅ¾ivanje Fernanda Vidala Olmosa, okrutnog paranoika opsednutog slepcima i zlom. Poslednji deo, Nepoznati bog, bavi se Martinom i Brunom nakon tragedije najavljene na poÄetku, njihovim savladavanjem Å¾ivotnih teÅ¡koÄ‡a. U ovakvu, vremenski ispresecanu, radnju upliÄ‡u se epizode iz argentinske istorije i razvijaju autorove politiÄke, moralne, metafiziÄke, religijske, estetske ideje i stavovi.', 13.00, 'upload/24bdf0aefc.jpg', 0),
 (2, 'Vreme Cuda', 10, 3, 'Å½ivimo u vremenu Äuda u kome su Äuda okrenuta protiv Äoveka.\r\n\r\nâ€žOd Äuda se ne zahteva da pomaÅ¾u veÄ‡ da menjaju, a od ovih najveÄ‡ih ne da izopaÄuju sadaÅ¡njost veÄ‡ da razgraÄ‘ujuÄ‡i je, grade buduÄ‡nost.â€œ Borislav PekiÄ‡\r\n\r\nOkvir ovog PekiÄ‡evog maestralnog romana, sastavljenog iz priÄa, jesu biblijski motivi Isusovih Äuda u Judeji. Sa poetiÄnom dijalektikom ona su izokrenuta u svoju suprotnost sa puno humora ali i duboke empatije za ljudsku patnju, ljubav i sudbinu. Leprozna Å¾ena je isceljena ali nije prihvaÄ‡ena viÅ¡e nigde, slepi Äovek progleda ali vidi svet i zgaÄ‘en sam sebi kopa oÄi, mutavac kada progovori o onome Å¡to je uvek mislio biva razapet na krst. SloÅ¾eno i slojevito delo na slikovit naÄin ukazuje na iskljuÄivost ideologija, dogmi i doktrina, gde iz najveÄ‡eg nametnutog dobra proistiÄu najveÄ‡e nevolje. Na magiÄan naÄin uvedeni smo u svet daleke proÅ¡losti gde ideoloÅ¡ka zagriÅ¾enost i netrpeljivost bilo koje dve suprostavljene snage pokazuje iste osobine kao i u bilo koje doba ljudske istorije. IdeoloÅ¡ka polarizacija zraÄi svojom porukom sve do danaÅ¡njih dana.', 12.00, 'upload/f42e913b1f.jpg', 0),
 (3, 'Autoritet i porodica', 7, 7, 'Knjiga â€žAutoritet i porodica â€œ, Eriha Froma, nastaje kao delo zasnovano na nauÄnim Äinjenicama iznetim u poznatoj studiji o autoritetu i porodici koja je izdata u Parizu 1936. godine. IzdavaÄ studije je Institut za socioloÅ¡koâ€“psiholoÅ¡ka istraÅ¾ivanja. (Studien Ã¼ber AutoritÃ¤t und Familie, Instituts fÃ¼r Sozialforschung, Paris, 1936). Studija je napisana od strane viÅ¡e autora, meÄ‘u kojima je i Erih From autor knjige za prikaz â€“ â€œAutoritet i porodicaâ€œ.', 12.00, 'upload/8ba11dfe0c.jpg', 1),
-(4, 'Mit o Sizifu', 9, 2, 'Mit o Sizifu je knjiga filozofskih eseja francuskog egzistencijalistiÄkog filozofa Albera Kamija. Delo je prvi put objavljeno 1942. godine.\r\n \r\n\r\nApsurdno prosuÄ‘ivanje - Kami poglavlje poÄinje objaÅ¡njavanjem Å¡ta on smatra glavnim pitanjem filozofije: zahteva li nuÅ¾no samoubistvo realizacija besmislenosti i apsurda Å¾ivota. U nastavku objaÅ¡njava stanje apsurda â€“ velik deo Å¾ivota gradimo na nadi za sutraÅ¡nji dan, a sutraÅ¡nji dan nas vodi korak bliÅ¾e smrti; ljudi Å¾ive nesmetano iako su svesni neizbeÅ¾nosti smrti. Kami tvrdi kako ljudi i svet nisu apsurdni sami po sebi, veÄ‡ apsurd nastaje kada ljudi pokuÅ¡aju razumeti nerazumljivosti sveta. IstiÄe filozofe koji su se bavili pojmom apsurda: Heidegger, Jaspers, Å estov, Kjerkegor i Huserl, no tvrdi da su izvrÅ¡ili i \"filozofsko samoubistvo\" zakljuÄcima koji su utemeljeni na stvarnom Bogu ili apstraktnom bogu. Tvrdi da bez smisla u Å¾ivotu nema niti lestvice vrednosti. Poglavlje zavrÅ¡ava 03:00 posledicama prihvatanja apsurda, a to su revolt, sloboda i strast.\r\n\r\n \r\nApsurdni Äovek - Poglavljem dominira pitanje kako Äovek apsurda treba Å¾iveti. Tvrdi da se etiÄka pravila ne mogu primeniti te da je sve dopuÅ¡teno, ali to ne dovodi do radosti, veÄ‡ do shvatanja neidealnog stanja Å¾ivota. Tada kreÄ‡e s primerima: Don Å½uan kao Äovek koji Å¾ivot pun strasti Å¾ivi Å¡to duÅ¾e moÅ¾e; glumac koji \"oslikava\" kratak Å¾ivot zbog kratkoroÄne slave; te osvajaÄ Äije Ä‡e ime sigurno uÄ‡i na par stranica ljudske istorije.\r\n\r\n \r\nApsurdno stvaranje - Kami istraÅ¾uje apsurd stvaraoca i umetnika. BuduÄ‡i da je objaÅ¡njenje nemoguÄ‡e, umetnost apsurda ograniÄena je u opisima. U nastavku analizira rad Dostojevskog i tvrdi kako njegova dela polaze sa stajaliÅ¡ta apsurda i istraÅ¾uju teme filozofskog samoubistva. No , poslednja dela Dostojevskog prikazuju put nade i vere te tako nisu u potpunosti kreacije o apsurdu.', 12.00, 'upload/88da8be593.jpg', 1),
-(5, 'SRPSKI INTELEKTUALCI I JUGOSLAVIJA 1918-1929', 4, 4, 'Jugoslavija je 1918. bila novi toponim na starim geopolitiÄkim mapama Evrope i nedvosmisleni dokaz da je Prvi svetski rat iz korena promenio vekovna nasleÄ‘a evropskih naroda. U pobedniÄkom posleratnom ucrtavanju evropske geografije uÄestvovali su i predstavnici juÅ¾noslovenskih naroda, solidarno i dogovorno. Trebalo je, u istom maniru, da takav posao obave i kod kuÄ‡e. To se, meÄ‘utim, nije dogodilo. Prva decenija postojanja nove drÅ¾ave JuÅ¾nih Slovena suoÄila je srpske intelektualce sa mnogim izazovima zajedniÄkog Å¾ivota sa drugim narodima ali, isto tako, kohabitacije sa starim politiÄkim elitama Srbije sa kojima i pre ujedinjenja nisu mogli da naÄ‘u zajedniÄki jezik. PoÄetni konfuzni nagoveÅ¡taji da politiÄari nisu sposobni da u procesu konstituisanja nove drÅ¾ave obave svoju istorijsku misiju, postali su realnost.\r\n\r\nOva knjiga, zasnovana na brojnim arhivskim dokumentima i literaturi, obiluje podacima o miÅ¡ljenjima i stavovima srpskih intelektualaca o vremenu u kom su Å¾iveli i stvarali i o problemima drÅ¾ave Äiji su stanovnici bili. Nema iole poznatijeg akademika, profesora univerziteta, publiciste ili knjiÅ¾evnika Äija argumentacija nije ukljuÄena u ovu knjigu, od Jovana CvijiÄ‡a, Jovana Å½ujoviÄ‡a, Slobodana JovanoviÄ‡a, Ljubomira StojanoviÄ‡a, Milana Grola do Branislava NuÅ¡iÄ‡a, MiloÅ¡a Crnjanskog i Justina PopoviÄ‡a.\r\n\r\nUprkos harizmi, znanju i ugledu, srpski intelektualci su bili nemoÄ‡ni u odnosu sa politikom. Iza sebe nisu imali potrebnu partijsku i drÅ¾avnu strukturu i bez obzira na to koliko su njihova miÅ¡ljenja bila racionalna a predlozi korisni, oni nisu uvaÅ¾avani. U drÅ¾avi slabo razvijene politiÄke kulture, skoro opÅ¡te nerazvijenosti i nepismenosti i tek na pragu demokratskih procesa koje je usvojio savremeni svet, idealizam intelektualaca je bio poniÅ¡ten politiÄkim interesima. Srpski intelektualci bili su aktivni i angaÅ¾ovani uÄesnici istorije Äije sudbinsko razreÅ¡enje je bilo van njihove moÄ‡i.', 9.00, 'upload/604580254b.jpg', 0);
+(4, 'Mit o Sizifu', 9, 2, 'Mit o Sizifu je knjiga filozofskih eseja francuskog egzistencijalistiÄkog filozofa Albera Kamija. Delo je prvi put objavljeno 1942. godine.\r\n \r\n\r\nApsurdno prosuÄ‘ivanje - Kami poglavlje poÄinje objaÅ¡njavanjem Å¡ta on smatra glavnim pitanjem filozofije: zahteva li nuÅ¾no samoubistvo realizacija besmislenosti i apsurda Å¾ivota. U nastavku objaÅ¡njava stanje apsurda â€“ velik deo Å¾ivota gradimo na nadi za sutraÅ¡nji dan, a sutraÅ¡nji dan nas vodi korak bliÅ¾e smrti; ljudi Å¾ive nesmetano iako su svesni neizbeÅ¾nosti smrti. Kami tvrdi kako ljudi i svet nisu apsurdni sami po sebi, veÄ‡ apsurd nastaje kada ljudi pokuÅ¡aju razumeti nerazumljivosti sveta. IstiÄe filozofe koji su se bavili pojmom apsurda: Heidegger, Jaspers, Å estov, Kjerkegor i Huserl, no tvrdi da su izvrÅ¡ili i \"filozofsko samoubistvo\" zakljuÄcima koji su utemeljeni na stvarnom Bogu ili apstraktnom bogu. Tvrdi da bez smisla u Å¾ivotu nema niti lestvice vrednosti. Poglavlje zavrÅ¡ava 03:00 posledicama prihvatanja apsurda, a to su revolt, sloboda i strast.\r\n\r\n \r\nApsurdni Äovek - Poglavljem dominira pitanje kako Äovek apsurda treba Å¾iveti. Tvrdi da se etiÄka pravila ne mogu primeniti te da je sve dopuÅ¡teno, ali to ne dovodi do radosti, veÄ‡ do shvatanja neidealnog stanja Å¾ivota. Tada kreÄ‡e s primerima: Don Å½uan kao Äovek koji Å¾ivot pun strasti Å¾ivi Å¡to duÅ¾e moÅ¾e; glumac koji \"oslikava\" kratak Å¾ivot zbog kratkoroÄne slave; te osvajaÄ Äije Ä‡e ime sigurno uÄ‡i na par stranica ljudske istorije.\r\n\r\n \r\nApsurdno stvaranje - Kami istraÅ¾uje apsurd stvaraoca i umetnika. BuduÄ‡i da je objaÅ¡njenje nemoguÄ‡e, umetnost apsurda ograniÄena je u opisima. U nastavku analizira rad Dostojevskog i tvrdi kako njegova dela polaze sa stajaliÅ¡ta apsurda i istraÅ¾uju teme filozofskog samoubistva. No , poslednja dela Dostojevskog prikazuju put nade i vere te tako nisu u potpunosti kreacije o apsurdu.', 12.00, 'upload/88da8be593.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -435,7 +423,7 @@ ALTER TABLE `tbl_copy`
 -- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_image`
@@ -453,13 +441,13 @@ ALTER TABLE `tbl_message`
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `productId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `productId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_social`
@@ -471,7 +459,7 @@ ALTER TABLE `tbl_social`
 -- AUTO_INCREMENT for table `tbl_wlist`
 --
 ALTER TABLE `tbl_wlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

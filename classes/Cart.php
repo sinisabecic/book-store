@@ -112,7 +112,7 @@ class Cart{
  
  }
 
-   public function orderProduct($cmrId){
+  public function orderProduct($cmrId){
   $sId = session_id();
   $query = "SELECT * FROM tbl_cart WHERE sId ='$sId' ";
   $getPro = $this->db->select($query);
@@ -142,6 +142,30 @@ class Cart{
   }
 
 
+  public function getOrdersAlert(){
+
+  $query =  "SELECT COUNT(status) as count FROM tbl_order WHERE status = 0 ";
+  $result = $this->db->select($query);
+  $row = mysqli_fetch_array($result);
+  $count_order = $row['count'];
+  return $count_order;  
+
+  }
+
+
+  public function getMessagesAlert(){
+
+  $query =  "SELECT COUNT(id) as poruke FROM tbl_message";
+  $result = $this->db->select($query);
+  $row = mysqli_fetch_array($result);
+  $count_msg = $row['poruke'];
+  return $count_msg;  
+
+  }
+
+
+
+
  public function checkOrder($cmrId){
  $query = "SELECT * FROM tbl_order WHERE cmrId ='$cmrId' ";
   $result = $this->db->select($query);
@@ -168,7 +192,7 @@ class Cart{
                 WHERE cmrId = '$id' AND date='$date' AND price='$price'";
                 $update_row  = $this->db->update($query);
                 if ($update_row) {
-                   $msg = "<div class='alert alert-success' role='alert'>Dodato.</div>";
+                   $msg = "<div class='alert alert-success' role='alert'>Isporuceno.</div>";
               return $msg;
                 }else {
                   $msg = "<div class='alert alert-danger' role='alert'>Greska.</div>";

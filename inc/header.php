@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Prodavnica knjiga</title>
- <link rel="shortcut icon" type="image/png" href="images/icon.png">
+<link rel="shortcut icon" type="image/png" href="images/icon.png">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,8 +22,8 @@
     border: none;
     font-size: 17px;
     color: #FFFFFF;
-    padding: 14px;
-    width: 50px;
+    padding: 12px;
+    width: 45px;
     text-align: center;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -73,8 +73,7 @@
   opacity: 1;
   transition: 0s
 }
-  #mySearch {
-  width: 104px;
+  #mySearch { 
   font-size: 14px;
   padding: 9px;
   border: 1px solid #ddd;
@@ -140,6 +139,7 @@ body {
         <a class="active" href="index.php">Pocetna</a>
 
 <?php
+ include 'inc/countries.php';
  include 'lib/Session.php';
  
 
@@ -224,12 +224,16 @@ body {
 		
         <a href="contact.php">Kontakt</a>
       
-
+<?php 
+        if (Session::get('cmrId') == 0 and Session::get('cuslogin')) { // Id admina je 0.
+        ?>    
+          <a href="admin/index.php"><i class="fa fa-fw fa-user"></i>Admin</a> 
+         <?php   } ?>
 	  
 
       <form action="search.php" method="get">      	
 
-          <input style="width: 140px" name="search" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Pretraga">
+          <input style="width: 130px" name="search" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Pretraga">
     
 		
        <button class="button" type="submit"><i class="fa fa-fw fa-search"></i></button>

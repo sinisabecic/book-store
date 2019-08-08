@@ -1,7 +1,5 @@
 <?php
-/**
- * Format Class
- */
+
 class Format{
 
  public function formatDate($date){

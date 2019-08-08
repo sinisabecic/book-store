@@ -21,7 +21,7 @@
 				<div class="grid_1_of_4 images_1_of_4" width: 170px;
 	height: 370px;>
 					 <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-					 	<img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+					 	<img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					 <h2 style="color: #4CAF50" class="text-center text-uppercase font-weight-bolder"><?php echo $result['productName']; ?> </h2>
 					 <p><?php echo $fm->textShorten($result['body'], 60); ?></p>
 					 <p><span style="color: #000;" class="price"><?php echo $result['price']; ?> €</span></p>	     				     		
@@ -51,7 +51,7 @@
       ?>
 				<div class="grid_1_of_4 images_1_of_4">
 					  <a href="preview.php?proid=<?php echo $result['productId']; ?>">
-					 	<img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
+					 	<img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" /></a>
 					 <h2 style="color: #4CAF50" class="text-center text-uppercase font-weight-bolder"><?php echo $result['productName']; ?> </h2>					  
 					 <p ><span style="color: #000;" class="price"><?php echo $result['price']; ?> €</span></p>
 					 <br>

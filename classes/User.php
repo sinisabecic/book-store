@@ -18,7 +18,26 @@ class User{
        $this->fm   = new Format();
   }
 
+
+  function ValidanTelefon($phone)
+{
+     // Allow +, - and . in phone number
+     $filtered_phone_number = filter_var($phone, FILTER_SANITIZE_NUMBER_INT);
+     // Remove "-" from number
+     $phone_to_check = str_replace("-", "", $filtered_phone_number);
+     // Check the lenght of number
+     // This can be customized if you want phone number from a specific country
+     if (strlen($phone_to_check) < 10 || strlen($phone_to_check) > 14) {
+        return false;
+     } else {
+       return true;
+     }
+}
+
+
+
  public function customerRegistration($data){
+
   $name      =  mysqli_real_escape_string($this->db->link, $data['name'] );
   $address     =  mysqli_real_escape_string($this->db->link, $data['address'] );
   $city      =  mysqli_real_escape_string($this->db->link, $data['city'] );
@@ -27,6 +46,37 @@ class User{
   $phone       =  mysqli_real_escape_string($this->db->link, $data['phone'] );
   $email       =  mysqli_real_escape_string($this->db->link, $data['email'] );
   $pass        =  mysqli_real_escape_string($this->db->link, $data['pass']);
+
+    // Ako se ukuca broj u ime
+    if(1 === preg_match('~[0-9]~', $name)){
+      $msg = "<div class='alert alert-warning' role='alert'>Cudno ime i prezime. Mozda si ukucao neki broj.</div>";
+          return $msg;
+    }
+
+     if(1 === preg_match('~[0-9]~', $city)){
+      $msg = "<div class='alert alert-warning' role='alert'>Nepravilno unesen grad.</div>";
+          return $msg;
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $msg = "<div class='alert alert-warning' role='alert'>Nepravilno unesen mejl.</div>";
+          return $msg;
+    } 
+
+    if (!is_numeric($zip)) {
+      $msg = "<div class='alert alert-warning' role='alert'>Nepravilno unesen postanski broj.</div>";
+          return $msg;
+    }
+
+    $validan_tel = $this->ValidanTelefon($phone);
+
+    if (!$validan_tel == true) {
+          $msg = "<div class='alert alert-warning' role='alert'>Nepravilno unesen broj telefona. Pokusajte ponovo.</div>";
+          return $msg;
+    } 
+
+
+
    if ($name == "" || $address == "" || $city == "" || $country == "" || $zip == "" || $phone == ""  || $email == ""  || $pass == "" ) {
       $msg = "<div class='alert alert-warning' role='alert'>Popuni sva polja.</div>";
           return $msg;
@@ -79,6 +129,13 @@ class User{
 
   public function getCustomerData($id){
   $query = "SELECT * FROM tbl_customer WHERE id ='$id' ";
+  $result = $this->db->select($query);
+  return $result;
+
+  }
+
+  public function getCustomers(){
+  $query = "SELECT * FROM tbl_customer";
   $result = $this->db->select($query);
   return $result;
 

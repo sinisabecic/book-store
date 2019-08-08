@@ -378,7 +378,7 @@ class Product{
 $cquery = "SELECT * FROM tbl_wlist WHERE cmrId ='$cmrId' AND productId ='$id' ";
  $check = $this->db->select($cquery);
  if ($check) {
-  $msg = "<div class='alert alert-warning' role='alert'>Knjiga je vec dodata.</div>  ";
+  $msg = "<div class='alert alert-warning' role='alert'>Knjiga je vec dodata.</div>";
     return $msg;
  }
 

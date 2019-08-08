@@ -39,7 +39,7 @@
         	<form action=" " method="post">
                 	<input name="email" placeholder="Email" type="text" >
                     <input name="pass" placeholder="Password" type="password" >
-            <div class="buttons"><div><button class="grey" name="login" >Prijava</button></div></div>
+            <div class="buttons"><div><input style="font-size:14px;" class="btn btn-success" name="login" type="submit" value="Prijava"></div></div>
                     </div>
 
                  </form>
@@ -90,22 +90,41 @@
 						<div>
 							<input type="text" name="address" placeholder="Adresa" />
 						</div>
+
+
+						<!-- Padajuca lista zemalja -->
 		    		<div>
-						<input type="text" name="country" placeholder="Zemlja" />
+						<select style="width: 340px" name="country">
+					<?php
+
+					foreach($countries as $key => $value) {
+
+					?>
+					<option value="<?= $key ?>" title="<?= htmlspecialchars($value) ?>"><?= htmlspecialchars($value) ?></option>
+					<?php
+
+					}
+
+					?>
+					</select>
 				 </div>		        
 	
+
 		           <div>
-		          <input type="text" name="phone" placeholder="Telefon" />
+		          <input type="text" name="phone" placeholder="Tel. Format: +382 69 123 456" />
 		          </div>
 				  
 				  <div>
-					  <input type="text" name="pass" placeholder="Sifra" />
+					  <input style="width: 340px;height: 34px;margin-top: 5px;" type="password" name="pass" placeholder="Sifra" />
 				</div>
 		    	</td>
 		    </tr> 
 		    </tbody></table> 
-		   <div class="search"><div><button class="grey" name="register">Kreiraj nalog</button></div></div>
-		    <p class="terms">Klikom na dugme 'Kreiraj nalog' prihvatate <a href="#">Uslove &amp; Koriscenje </a>.</p>
+		   <div class="search"><div><input style="font-size:14px;" class="btn btn-dark" name="register" type="submit" value="Kreiraj nalog"/></div></div>
+
+
+
+		    <p class="terms">Klikom na dugme 'Kreiraj nalog' prihvatate <a href="#">Uslove koriscenja </a>.</p>
 		    <div class="clear"></div>
 		    </form>
     	</div>  	

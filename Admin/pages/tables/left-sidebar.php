@@ -1,3 +1,18 @@
+<?php 
+ include '../../../lib/Database.php';
+ include '../../../helpers/Format.php';
+  
+
+
+  spl_autoload_register(function($class){
+   include_once "../../../classes/".$class.".php";
+
+  });
+
+  $ct = new Cart();     
+       
+ ?>
+
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
    
@@ -25,7 +40,7 @@
 		<!-- Autori -->
         <li class="treeview">
           <a href="#">           
-            <i class="fa fa-table"></i> <span>Autori</span>
+            <i class="fa fa-user"></i> <span>Autori</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -41,7 +56,7 @@
           <!-- Izdavaci -->
         <li class="treeview">
           <a href="#">           
-            <i class="fa fa-table"></i> <span>Izdavaci</span>
+            <i class="fa fa-stack-overflow"></i> <span>Izdavaci</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -56,7 +71,7 @@
 		 <!-- Knjige -->
         <li class="treeview">
           <a href="#">           
-            <i class="fa fa-table"></i> <span>Knjige</span>
+            <i class="fa fa-book"></i> <span>Knjige</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -76,28 +91,53 @@
         </li>
 		
 		
-		<!-- Porudzbine -->
-        <li class="">
-          <a href="mainorder.php">           
-            <i class="fa fa-table"></i> <span>Porudzbine</span>            
-          </a>                   
-        </li> 
-		
-		
+		      
+    <!-- Porudzbine -->        
+    <?php 
+          $getOrder = $ct->getOrdersAlert(); //"SELECT * FROM tbl_order WHERE status = 0 ";
+                    
+          if ($getOrder) { ?>
+          <li>
+          <a href="mainorder.php">                  
+              <i class="fa fa-cc-visa"></i> Porudzbine  <span class="label label-danger"><?php echo $getOrder; ?></a>
+          </li>
+
+<?php }  else { ?>
+          <li>
+          <a href="mainorder.php">
+              <i class="fa fa-cc-visa"></i> <span>Porudzbine</span></a> 
+<?php }  ?>    
+          </li>  			
+
+
+
 		<!-- Sajt -->
         <li class="">
           <a href="../../../" target="__blank">           
-            <i class="fa fa-table"></i> <span>Prodavnica</span>            
+            <i class="fa fa-shopping-cart"></i> <span>Prodavnica</span>               
           </a>                   
         </li> 
 
 
         <!-- Prijemno sanduce -->
+       <?php 
+          $getMsg = $ct->getMessagesAlert(); //"SELECT * FROM tbl_order WHERE status = 0 ";
+                    
+          if ($getMsg) { ?>
         <li class="">
           <a href="messages.php">           
-            <i class="fa fa-table"></i> <span>Prijemno sanduce</span>            
+            <i class="fa fa-envelope"></i> Prijemno sanduce <span class="label label-danger"><?php echo $getMsg; ?></span>            
           </a>                   
         </li>
+
+<?php }  else { ?>
+
+        <li class="">
+          <a href="messages.php">           
+            <i class="fa fa-envelope"></i> <span>Prijemno sanduce</span>            
+          </a>                   
+        </li>
+<?php } ?> 
               
        
     </section>
