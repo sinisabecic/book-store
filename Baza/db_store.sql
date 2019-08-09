@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2019 at 02:35 AM
+-- Generation Time: Aug 09, 2019 at 03:21 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -172,7 +172,7 @@ CREATE TABLE `tbl_customer` (
 --
 
 INSERT INTO `tbl_customer` (`id`, `name`, `address`, `city`, `country`, `zip`, `phone`, `email`, `pass`) VALUES
-(3, 'Elmaz Feratovic', 'Bijelo Polje bb', 'Bijelo Polje', 'Montenegro', '10222', '123456', 'elmaz@elmaz.com', '12345');
+(0, 'Elmaz Feratovic', 'Bijelo Polje bb', 'Bijelo Polje', 'Montenegro', '10222', '123456', 'elmaz@elmaz.com', '12345');
 
 -- --------------------------------------------------------
 
@@ -212,7 +212,8 @@ INSERT INTO `tbl_message` (`id`, `message`, `name`, `email`, `phone`, `date`) VA
 (6, 'ssssssss', 'Sinisa Becic', 'siki.pfk@gmail.com', '777', '2019-07-15 16:42:31'),
 (7, 'aaaaa', 'Sinisa Becic', 'siki.pfk@gmail.com', '', '2019-07-15 16:43:25'),
 (8, '', 'Sinisa', 'beksona@gmail.com', '', '2019-07-15 16:45:06'),
-(9, '', 'Sinisa Becic', 'siki.pfk@gmail.com', '', '2019-07-15 16:45:38');
+(9, '', 'Sinisa Becic', 'siki.pfk@gmail.com', '', '2019-07-15 16:45:38'),
+(10, 'Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.', 'Zaza', 'arijanakadic1@gmail.com', '38269891329', '2019-08-08 19:54:36');
 
 -- --------------------------------------------------------
 
@@ -231,6 +232,13 @@ CREATE TABLE `tbl_order` (
   `status` int(11) NOT NULL DEFAULT '0',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_order`
+--
+
+INSERT INTO `tbl_order` (`id`, `cmrId`, `productId`, `productName`, `quantity`, `price`, `image`, `status`, `date`) VALUES
+(1, 0, 1, 'O junacima i grobovima', 1, 13.00, 'upload/24bdf0aefc.jpg', 0, '2019-08-08 19:55:20');
 
 -- --------------------------------------------------------
 
@@ -399,7 +407,7 @@ ALTER TABLE `tbl_brand`
 -- AUTO_INCREMENT for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `cartId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `cartId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `tbl_category`
@@ -423,7 +431,7 @@ ALTER TABLE `tbl_copy`
 -- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_image`
@@ -435,13 +443,13 @@ ALTER TABLE `tbl_image`
 -- AUTO_INCREMENT for table `tbl_message`
 --
 ALTER TABLE `tbl_message`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
