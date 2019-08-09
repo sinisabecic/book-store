@@ -1,3 +1,31 @@
+<?php
+ include 'inc/countries.php';
+ include 'lib/Session.php';
+
+ 
+  Session::init();  // Mora stojati iznad HTML-a    
+ 
+
+ include 'lib/Database.php';
+ include 'helpers/Format.php';
+  
+
+
+  spl_autoload_register(function($class){
+   include_once "classes/".$class.".php";
+
+  });
+
+  $db = new Database();
+  $fm = new Format();
+  $pd = new Product(); // knjiga
+  $cat = new Category(); // autor
+  $ct = new Cart();
+  $cmr = new User();
+  $con = New Contact();
+    
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -127,6 +155,10 @@ body {
     $('#dc_mega-menu-orange').dcMegaMenu({rowItems:'4',speed:'fast',effect:'fade'});
   });
 </script>
+
+
+
+
 </head>
 <body>
   <div class="wrap">
@@ -138,37 +170,7 @@ body {
    
         <a class="active" href="index.php">Pocetna</a>
 
-<?php
- include 'inc/countries.php';
- include 'lib/Session.php';
- 
 
- // Ovaj dio je dodat za Elmaza, jer mu izbaca: "a session had already been started - ignoring session_start()"
-	if(!isset($_SESSION)) 
-	{ 
-	    Session::init();
-	    ob_start(); 
-	}
-
- include 'lib/Database.php';
- include 'helpers/Format.php';
-  
-
-
-  spl_autoload_register(function($class){
-   include_once "classes/".$class.".php";
-
-  });
-
-  $db = new Database();
-  $fm = new Format();
-  $pd = new Product(); // knjiga
-  $cat = new Category(); // autor
-  $ct = new Cart();
-  $cmr = new User();
-  $con = New Contact();
-  	
-?>
         
 		<!-- Korpa i placanje -->
 		<?php 

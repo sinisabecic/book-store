@@ -50,6 +50,8 @@
 <link href="../css/froala_style.min.css" rel="stylesheet" type="text/css" />
 
 </head>
+
+
 <body class="hold-transition skin-blue sidebar-mini">
 
 

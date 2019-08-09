@@ -54,15 +54,13 @@
  				$getPd = $pd->getSingleProduct($id); 
                   if ($getPd) {
                   	while ($result = $getPd->fetch_assoc()) {
-                  		 
-                  	
-					?>
-
+  ?>
 
 
 					<div class="grid images_3_of_2">
-						<img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" />
+						<img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" />				
 					</div>
+					
 				<div class="desc span_3_of_2">
 					<h2 style="color: #4CAF50"><?php echo $result['productName'];?> </h2>
 					<p><?php echo $fm->textShorten($result['body'], 200);?></p>					

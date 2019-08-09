@@ -5,7 +5,7 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Preporucujemo:</h3>
+    		<h3 style="color: #333333">Preporucujemo:</h3>
     		</div>
     		<div class="clear"></div>
     	</div>
@@ -37,7 +37,7 @@
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
-    		<h3>Novo u ponudi</h3>
+    		<h3 style="color: #333333">Novo u ponudi</h3>
     		</div>
     		<div class="clear"></div>
     	</div>
