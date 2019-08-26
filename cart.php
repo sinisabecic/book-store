@@ -69,7 +69,7 @@ if (!isset($_GET['id'])) {
  								<tr>
 								<td><?php echo $i;  ?></td>
 								<td><?php echo $result['productName'];  ?></td>
-								<td><img src="adminlte/pages/tables/<?php echo $result['image']; ?>" alt="" height="100px;" width="80px;"/></td>
+								<td><img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" height="100px;" width="80px;"/></td>
 								<td>€ <?php echo $result['price'];  ?></td>
 								<td>
 									<form action="" method="post">
