@@ -43,7 +43,7 @@
                 <tr>
                 <td><?php echo $i;  ?></td>
                 <td><a href="preview.php?proid=<?php echo $result['productId']; ?>"><?php echo $result['productName'];  ?></td>
-                <td><img src="adminlte/pages/tables/<?php echo $result['image']; ?>" height="100px;" width="80px;" alt=""/></td>
+                <td><img src="admin/pages/tables/<?php echo $result['image']; ?>" height="100px;" width="80px;" alt=""/></td>
                 <td> <?php echo $result['quantity'];  ?></td>
                  
                 <td>€ 

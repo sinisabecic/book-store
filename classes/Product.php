@@ -424,7 +424,7 @@ $cquery = "SELECT * FROM tbl_wlist WHERE cmrId ='$cmrId' AND productId ='$id' ";
 
 
  public function productBySearch($search){
-  $query = "SELECT * FROM tbl_product WHERE productName LIKE '%$search%' OR body LIKE '%$search%' ";
+  $query = "SELECT DISTINCT * FROM tbl_product, tbl_brand WHERE productName LIKE '%$search%' OR body LIKE '%$search%' or price LIKE '%$search%' OR brandName LIKE '%$search%' ";
   $result = $this->db->select($query);
   return $result;
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 09, 2019 at 03:21 AM
+-- Generation Time: Aug 26, 2019 at 02:34 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -67,7 +67,7 @@ INSERT INTO `tbl_brand` (`brandId`, `brandName`) VALUES
 (5, 'Carobna knjiga'),
 (6, 'Darkwood'),
 (7, 'Bigz'),
-(8, 'Beopoliss');
+(8, 'Beopolis');
 
 -- --------------------------------------------------------
 
@@ -201,20 +201,6 @@ CREATE TABLE `tbl_message` (
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbl_message`
---
-
-INSERT INTO `tbl_message` (`id`, `message`, `name`, `email`, `phone`, `date`) VALUES
-(2, 'Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.', 'Sinisa Becic', 'siki.pfk@gmail.com', '123456', '2019-07-15 16:30:11'),
-(3, 'Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.', 'Sinisa Becic', 'siki.pfk@gmail.com', '55555555', '2019-07-15 16:34:18'),
-(4, 'da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.', 'Sinisa Becic', 'siki.pfk@gmail.com', '55555555', '2019-07-15 16:34:54'),
-(6, 'ssssssss', 'Sinisa Becic', 'siki.pfk@gmail.com', '777', '2019-07-15 16:42:31'),
-(7, 'aaaaa', 'Sinisa Becic', 'siki.pfk@gmail.com', '', '2019-07-15 16:43:25'),
-(8, '', 'Sinisa', 'beksona@gmail.com', '', '2019-07-15 16:45:06'),
-(9, '', 'Sinisa Becic', 'siki.pfk@gmail.com', '', '2019-07-15 16:45:38'),
-(10, 'Davno je ustanovljena Äinjenica da Ä‡e Äitaoc biti omamljen Äitljivim sadrÅ¾ajem stranice kada gleda njegov izgled. Smisao upotrebe Lorema Ipsuma je da ima viÅ¡e ili manje normalne distribucije slova. Postoje mnoge varijacije odlomaka Lorem Ipsum-a, ali veÄ‡ina ih je pretrpjela promjenu u nekoj formi, ubrizganim humorom ili nasumiÄnim rijeÄima ne izgledaju Äak ni malo uvjerljivi. Ako Ä‡ete koristiti odlomak Lorem Ipsum, morate biti sigurni da se niÅ¡ta neugodno ne naÄ‘e u sredini teksta.', 'Zaza', 'arijanakadic1@gmail.com', '38269891329', '2019-08-08 19:54:36');
-
 -- --------------------------------------------------------
 
 --
@@ -302,6 +288,13 @@ CREATE TABLE `tbl_wlist` (
   `price` float(10,2) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_wlist`
+--
+
+INSERT INTO `tbl_wlist` (`id`, `cmrId`, `productId`, `productName`, `price`, `image`) VALUES
+(1, 0, 3, 'Autoritet i porodica', 12.00, 'upload/8ba11dfe0c.jpg');
 
 --
 -- Indexes for dumped tables
@@ -443,7 +436,7 @@ ALTER TABLE `tbl_image`
 -- AUTO_INCREMENT for table `tbl_message`
 --
 ALTER TABLE `tbl_message`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_order`
@@ -467,7 +460,7 @@ ALTER TABLE `tbl_social`
 -- AUTO_INCREMENT for table `tbl_wlist`
 --
 ALTER TABLE `tbl_wlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

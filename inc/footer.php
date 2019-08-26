@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer" style="background-color: #33333">
    	  <div class="wrapper">	
 	     <div class="section group">
 				<div class="col_1_of_4 span_1_of_4">
@@ -14,20 +14,20 @@
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Zasto kupovati kod nas?</h4>
 						<ul>
-						<li><a href="about.php">O nama</a></li>
-						<li><a href="faq.php">Korisnicki servis</a></li>					
-						<li><a href="contact.php"><span>Mapa sajta</span></a></li>
-						<li><a href="preview.php"><span>Termini za pretragu</span></a></li>
+						<li><a href="#">O nama</a></li>
+						<li><a href="#">Korisnicki servis</a></li>					
+						<li><a href="#"><span>Mapa sajta</span></a></li>
+						<li><a href="#"><span>Termini za pretragu</span></a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Moj nalog</h4>
 						<ul>
-							<li><a href="contact.php">Prijava</a></li>
-							<li><a href="index.php">Vidi korpu</a></li>
-							<li><a href="wishlist.php">Moja lista zelja</a></li>
+							<li><a href="#">Prijava</a></li>
+							<li><a href="#">Vidi korpu</a></li>
+							<li><a href="#">Moja lista zelja</a></li>
 							<li><a href="#">Prati moju narudzbu</a></li>
-							<li><a href="faq.php">Pomoc</a></li>
+							<li><a href="#">Pomoc</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
@@ -65,7 +65,7 @@
            while ($result = $getcopy->fetch_assoc()) {
            
      ?>
-				<p><?php echo $result['copyright'];  ?></p>
+				<a href="opis-projekta.html" target="__blank"><p><?php echo $result['copyright'];  ?></p></a>
 
 				 <?php    }  }  ?>
 		   </div>
@@ -102,6 +102,32 @@
 		  });
 		});
 	  </script>
+
+
+
+	  <!-- Klik na sliku -->
+	  <script>
+						// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			  modal.style.display = "block";
+			  modalImg.src = this.src;
+			  captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+			  modal.style.display = "none";
+			}
+	   </script>
 
 
 </body>

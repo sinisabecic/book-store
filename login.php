@@ -37,8 +37,8 @@
         	<p>Prijavi se pomocu forme ispod.</p>
 
         	<form action=" " method="post">
-                	<input name="email" placeholder="Email" type="text" >
-                    <input name="pass" placeholder="Password" type="password" >
+                	<input name="email" placeholder="Mejl adresa" type="text" >
+                    <input name="pass" placeholder="Lozinka" type="password" >
             <div class="buttons"><div><input style="font-size:14px;" class="btn btn-success" name="login" type="submit" value="Prijava"></div></div>
                     </div>
 

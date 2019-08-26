@@ -58,8 +58,16 @@
 
 
 					<div class="grid images_3_of_2">
-						<img src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" />				
+						<img id="myImg" src="admin/pages/tables/<?php echo $result['image']; ?>" alt="" />			
 					</div>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+					
 					
 				<div class="desc span_3_of_2">
 					<h2 style="color: #4CAF50"><?php echo $result['productName'];?> </h2>
