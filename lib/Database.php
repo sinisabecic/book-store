@@ -1,6 +1,6 @@
 <?php 
- $filepath = realpath(dirname(__FILE__));
-include_once ($filepath.'/../config/config.php');
+// $filepath = realpath(dirname(__FILE__));
+// include_once ($filepath.'/../config/config.php');
  
 ?>
 
@@ -9,10 +9,10 @@ include_once ($filepath.'/../config/config.php');
 <?php
  class Database {
 
-public $host = DB_HOST;
-public $user = DB_USER;
-public $pass = DB_PASS;
-public $dbname = DB_NAME;
+public $host = 'localhost';
+public $user = 'root';
+public $pass = '';
+public $dbname = 'db_store';
 
  public $link;
  public $error;
