@@ -1,8 +1,7 @@
 # <span style="color:#14274e">Bookstore | Online knjižara</span>
 
----
 
-## <span style="color:#394867">Contents</span>
+### <span style="color:#394867">Contents</span>
 
 - [Description](#description)
 - [Technologies](#technologies)
@@ -10,13 +9,13 @@
 
 ---
 
-## <span style="color:#394867">Description</span>
+### <span style="color:#394867">Description</span>
 
 Bookstore for online shopping. This project has a AdminLTE Control Management System for manipulating with data.
 
 ---
 
-## <span style="color:#394867">Technologies</span>
+### <span style="color:#394867">Technologies</span>
 
 - [PHP](https://php.net)
 - [MySQL](https://www.mysql.com/)
@@ -24,7 +23,7 @@ Bookstore for online shopping. This project has a AdminLTE Control Management Sy
 
 ---
 
-## <span style="color:#394867">Author Info</span>
+### <span style="color:#394867">Author Info</span>
 
 - **Facebook** - [@sinisabecicc](https://facebook.com/sinisabecicc)
 - **Twitter** - [@sinisa\_\_b](https://twitter.com/sinisa__b)
