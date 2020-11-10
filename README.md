@@ -1,4 +1,4 @@
-# <span style="color:#14274e">Bookstore | Online knjižara</span>
+# <span style="color:#14274e">Bookstore</span>
 
 
 ### <span style="color:#394867">Contents</span>
